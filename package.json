@@ -1,4 +1,5 @@
 {
+  "homepage": "https://dev-edzola.github.io/D3js-",
   "name": "test002",
   "version": "0.1.0",
   "private": true,
@@ -12,9 +13,9 @@
     "d3-geo": "^3.1.1",
     "d3-scale": "^4.0.2",
     "gh-pages": "^6.3.0",
-    "react": "^19.0.0",
+    "react": "^18.3.1",
     "react-big-calendar": "^1.18.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "react-select": "^5.10.1",
     "react-simple-maps": "^3.0.0",
@@ -24,7 +25,9 @@
     "start": "react-scripts start",
     "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
